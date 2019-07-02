@@ -1,0 +1,3 @@
+<!--pages/news/news_detail/news_detail.wxml-->
+
+<web-view src="{{url}}"></web-view>

@@ -1,0 +1,14 @@
+<!--pages/news/news.wxml-->
+<view class="page">
+  
+  <view wx:for="{{[1, 2, 3,4,5]}}" wx:key="unique" class="content" data-id="{{item}}" bindtap='gotoNews'>
+    <image src="http://jiehai.gs/program/news_0{{item}}.png" mode="widthFix" style="width:100%;"></image>
+  </view>
+
+
+</view>
+
+
+<contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+</contact-button>
+<image src="/images/call.png" class="img-plus-style1" bindtap="calling"></image>

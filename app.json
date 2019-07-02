@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cases/cases",
+    "pages/news/news",
+    "pages/about/about",
+    "pages/news/news_detail/news_detail",
+    "pages/cases/case_detail/case_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "六子软件",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#61aadb",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index_on.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/cases_on.png",
+        "iconPath": "images/cases.png",
+        "pagePath": "pages/cases/cases",
+        "text": "服务"
+      },
+      {
+        "selectedIconPath": "images/news_on.png",
+        "iconPath": "images/news.png",
+        "pagePath": "pages/news/news",
+        "text": "资讯"
+      },
+      {
+        "selectedIconPath": "images/about_on.png",
+        "iconPath": "images/about.png",
+        "pagePath": "pages/about/about",
+        "text": "我们"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

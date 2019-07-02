@@ -1,0 +1,5 @@
+/* pages/news/news.wxss */
+.content{
+  position: relative;
+  margin-bottom: 0;
+}

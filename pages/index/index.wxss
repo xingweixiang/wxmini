@@ -1,0 +1,124 @@
+/**index.wxss**/
+.brand{
+  width: 100%;
+  text-align: center;
+  margin-top:10px;
+  background-color: #FFF;
+}
+.weui-grids{
+  border:none;
+}
+ .weui-grid{
+  border-bottom:none;
+} 
+ .weui-grid image{
+    width:30%;
+} 
+
+.brand-header{
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.swiper-container{  
+  position: relative;  
+}  
+.swiper-container .swiper .img{  
+  width: 100%;  
+  height: 100%;  
+}  
+.swiper-container .dots{  
+  position: absolute;  
+  right: 50px;  
+  bottom: 20rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.swiper-container .dots .dot{  
+  margin: 0 8rpx;  
+  width: 14rpx;  
+  height: 14rpx;  
+  background: #fff;  
+  border-radius: 8rpx;  
+  transition: all .6s;  
+}  
+.swiper-container .dots .dot.active{  
+  /* width: 24rpx;   */
+  background: #61aadb;  
+}  
+
+.brand .dots{  
+  left:0;
+  right: 0x;  
+  bottom: 20rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.brand .dots .dot{  
+  margin: 0 8rpx;  
+  width: 14rpx;  
+  height: 14rpx;  
+  background: #EBEBEB;  
+  border-radius: 8rpx;  
+  transition: all .6s;  
+}  
+.brand .dots .dot.active{  
+  /* width: 24rpx;   */
+  background: #61aadb;  
+}  
+
+.cases{
+  width: 100%;
+  text-align: center;
+  margin-top:10px;
+  padding-bottom: 60px;
+  background-color: #FFF;
+}
+
+.cases .case{
+  width:46.5%;
+  height: 180px;
+  float:left;
+  margin-left:2%;
+  text-align: left;
+}
+
+.cases .case image{
+  width:100%;
+}
+.cases button{
+  margin-top:30px;
+}
+.description{
+  padding:5px 20px;
+  text-align: left;
+}
+
+swiper-item image{
+  width:100%;
+  height:100%;
+}
+
+.swiper-container swiper{
+    height:200px;
+}
+
+.weui-grid image{
+  height:100px;
+  width:100%;
+}
+
+.weui-grid{
+  padding:0;
+}
+
+.brand swiper{
+  margin-top:30px;
+}
+
+.button{
+  background-color: #fff;
+  color:black;
+  /* top:40px; */
+  width:150px;
+}

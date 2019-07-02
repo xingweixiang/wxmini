@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="banner">
+    <image src="http://jiehai.gs/program/cases_banner.png" mode="widthFix" style="width:100%;" />
+  </view>
+  <view class="cases">
+    <view class="brand-header">
+      <view class="weui-article__h1">服务</view>
+    </view>
+       <view class="case_content"  wx:for="{{[3,1,2,4,5,6,7,9,8]}}" wx:key="unique" data-id="{{item}}" bindtap='gotoCase'>
+<image src="/images/{{item}}.png" mode="aspectFit"></image>
+      </view>
+     
+    <view>
+      <view class="weui-article__h3" style="color:rgb(200,200,200);top:20px;">-  -</view>
+    </view>
+
+  </view>
+</view>
+
+<contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+</contact-button>
+<image src="/images/kefu.png" class="img-plus-style"></image>  
+<image src="/images/call.png" class="img-plus-style1" bindtap="calling"></image>

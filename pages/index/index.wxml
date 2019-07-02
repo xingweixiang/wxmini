@@ -1,0 +1,99 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="banner swiper-container">
+    <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+  <view class="brand">
+    <view class="brand-header">
+      <view class="weui-article__h1">服务范围</view>
+    </view>
+    <view class="dots">
+      <view class="dot{{0 == brandCurrent ? ' active' : ''}}"></view>
+      <view class="dot{{1 == brandCurrent ? ' active' : ''}}"></view>
+      <view class="dot{{2 == brandCurrent ? ' active' : ''}}"></view>
+    </view>
+    <swiper current="{{brandCurrent}}" bindchange="brandChange">
+      <swiper-item>
+        <view class="weui-grids">
+          <view class="weui-grid">
+            <image src="/images/3.png" mode="aspectFit" />
+          </view>
+          <view class="weui-grid">
+            <image src="/images/1.png" mode="aspectFit" />
+          </view>
+          <view class="weui-grid">
+            <image src="/images/2.png" mode="aspectFit" />
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="weui-grids">
+          <view class="weui-grid">
+            <image src="/images/4.png" mode="aspectFit" />
+          </view>
+          <view class="weui-grid">
+            <image src="/images/5.png" mode="aspectFit" />
+          </view>
+          <view class="weui-grid">
+            <image src="/images/6.png" mode="aspectFit" />
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="weui-grids">
+          <view class="weui-grid">
+            <image src="/images/7.png" mode="aspectFit" />
+          </view>
+          <view class="weui-grid">
+            <image src="/images/8.png" mode="aspectFit" />
+          </view>
+          <view class="weui-grid">
+            <image src="/images/9.png" mode="aspectFit" />
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="cases">
+    <view class="brand-header">
+      <view class="weui-article__h1">资讯</view>
+    </view>
+    <view class="cases-body">
+      <view class="weui-cells weui-cells_after-title">
+
+        <view class="weui-cell">
+            <image mode="widthFix" src="{{imgNewsUrls[0]}}" style="margin-right: 5px;vertical-align: middle;width:100%;"></image>
+        </view>
+       <view class="weui-cell">
+            <image mode="widthFix" src="{{imgNewsUrls[1]}}" style="margin-right: 5px;vertical-align: middle;width:100%;"></image>
+        </view>
+        <view class="weui-cell">
+            <image mode="widthFix" src="{{imgNewsUrls[2]}}" style="margin-right: 5px;vertical-align: middle;width:100%;"></image>
+        </view>
+
+      </view>
+    </view>
+    <view>
+        <button class="button"   bindtap='morenews'>查看更多</button>
+    </view>
+  </view>
+
+</view>
+
+
+<contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+</contact-button>
+<image src="/images/call.png" class="img-plus-style1" bindtap="calling"></image>

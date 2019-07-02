@@ -1,0 +1,2 @@
+<!--pages/cases/case_detail/case_detail.wxml-->
+<web-view src="{{url}}"></web-view>
